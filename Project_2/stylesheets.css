@@ -67,6 +67,7 @@ a:hover {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  text-overflow: ellipsis;
 }
 
 .contact h2,
@@ -81,13 +82,32 @@ a:hover {
   color: white;
 }
 
-/* Footer */
-.footer {
-  background-color: black;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+input {
+  background-color: LightGoldenRodYellow;
+  border: 2px solid blue;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+  padding: 10px;
+  margin-top: 6px;
 }
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+input[type=submit]{
+  background-color:coral;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+input[type=submit]:hover {
+  background-color: rgb(255, 0, 0);opacity:0.4;
+}
+
 
 /* Media Queries */
 @media only screen and (max-width: 1000px) {
@@ -144,6 +164,7 @@ a:hover {
 
 .navbar h1 {
   font-size: 1.5rem;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
 .navbar ul {
@@ -169,4 +190,5 @@ nav .animation {
   text-align: center;
   font-size: 10px;
   padding: 10px;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
